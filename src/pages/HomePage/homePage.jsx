@@ -5,6 +5,7 @@ import ContactUsPage from "../contactUsPage";
 import Gallery from "../gallery";
 import AboutUsPage from "../aboutUsPage";
 import Items from "../itemsPage";
+import ErrorPage from "./error";
 export  default function HomePage() {
   return (
     <> 
@@ -23,6 +24,10 @@ export  default function HomePage() {
        </Route>
 
       <Route path = "/items" element ={<Items />}>
+        
+        </Route>
+      <Route path = "*" element ={<ErrorPage />}>
+          
         
         </Route>
 
